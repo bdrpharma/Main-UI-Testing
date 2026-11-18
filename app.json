@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "BDR Healthcare",
+    "slug": "bdr-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "bdrhealthcare",
+    "plugins": ["expo-router", "expo-image-picker"],
+    "ios": {"supportsTablet": true, "bundleIdentifier": "com.bdrhealthcare.mobile"},
+    "android": {"package": "com.bdrhealthcare.mobile"},
+    "web": {"bundler": "metro"}
+  }
+}

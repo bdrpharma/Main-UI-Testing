@@ -1,0 +1,9 @@
+import { Medicine } from '@/src/types/medicine';
+export const medicines: Medicine[] = [
+ {id:'m1',name:'Dolo 650',generic:'Paracetamol 650mg',brand:'Micro Labs',image:'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80',category:'Pain Relief',price:32,stock:18,description:'Dolo 650 is used to treat fever and mild to moderate pain such as headache, body ache and toothache.',composition:'Paracetamol 650mg',stores:12},
+ {id:'m2',name:'Crocin 500',generic:'Paracetamol 500mg',brand:'GSK',image:'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=600&q=80',category:'Pain Relief',price:28,stock:35,description:'A common paracetamol tablet for temporary relief from fever and mild pain.',composition:'Paracetamol 500mg',stores:18},
+ {id:'m3',name:'Augmentin 625',generic:'Amoxicillin + Clavulanic Acid',brand:'GSK',image:'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=80',category:'Antibiotic',price:118,stock:9,description:'Prescription antibiotic. Use only as directed by a qualified medical professional.',composition:'Amoxicillin 500mg + Clavulanic Acid 125mg',stores:7},
+ {id:'m4',name:'Metformin 500',generic:'Metformin Hydrochloride',brand:'Sun Pharma',image:'https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=600&q=80',category:'Diabetes',price:42,stock:21,description:'Medicine commonly prescribed for blood sugar management in type 2 diabetes.',composition:'Metformin Hydrochloride 500mg',stores:15},
+ {id:'m5',name:'Amlodipine 5mg',generic:'Amlodipine',brand:'Cipla',image:'https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=600&q=80',category:'Heart',price:36,stock:6,description:'Prescription medicine used for managing high blood pressure and certain heart conditions.',composition:'Amlodipine 5mg',stores:10}
+];
+export async function getMedicines(){ return medicines; }

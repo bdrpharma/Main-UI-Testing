@@ -1,0 +1,2 @@
+import React from 'react'; import {View,StyleSheet} from 'react-native'; import {SafeAreaView} from 'react-native-safe-area-context'; import {colors} from '@/src/constants/colors'; import BottomNav from './BottomNav';
+export default function Screen({children,nav=true}:{children:React.ReactNode;nav?:boolean}){return <SafeAreaView style={s.safe} edges={['top','bottom']}><View style={s.main}>{children}</View>{nav&&<BottomNav/>}</SafeAreaView>}; const s=StyleSheet.create({safe:{flex:1,backgroundColor:colors.bg},main:{flex:1}});
